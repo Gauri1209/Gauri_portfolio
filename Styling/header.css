@@ -168,9 +168,103 @@
     background: rgba(255,255,255,0.25);
 }
 
+/* ================= RESPONSIVE SAFETY ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .nav-header {
+        height: 66px;
+        padding: 0 32px;
+    }
+
+    .nav-center {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .nav-right {
+        gap: 14px;
+    }
+
+    .logo-wrap {
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo-wrap img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .nav-header {
+        height: auto;
+        padding: 14px 20px;
+
+        flex-wrap: wrap;
+        row-gap: 12px;
+    }
+
+    /* Center title becomes normal flow */
+    .nav-center {
+        position: relative;
+        left: auto;
+        transform: none;
+
+        width: 100%;
+        text-align: center;
+
+        font-size: 20px;
+        letter-spacing: 0.8px;
+    }
+
+    .nav-left,
+    .nav-right {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-right {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .logo-wrap {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-wrap img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 420px) {
+    .nav-center {
+        font-size: 18px;
+        letter-spacing: 0.6px;
+    }
+
+    .icon-wrap {
+        width: 34px;
+        height: 34px;
+    }
+
+    .nav-right i {
+        font-size: 16px;
+    }
+}
+
 
 /* Shift main content below fixed header */
 .main-content {
     position: relative;
     margin-top: 1vh;
 }
+

@@ -17,53 +17,79 @@
 <body>
 
     <!-- PARALLAX HEADER -->
-    <header class="nav-header">
+    <header class="nav-header" id="navbar">
         <div class="nav-left">
-          <img src="images/WhatsApp Image 2025-12-14 at 20.24.17_d22e09c6.jpg" alt="Logo" />
-        </div>
+            <div class="logo-wrap">
+              <img src="images/WhatsApp Image 2025-12-14 at 20.24.17_d22e09c6.jpg" alt="Logo" />
+            </div>
+          </div>
       
-        <div class="nav-center">Art By Gauri</div>
+        <div class="nav-center">ART BY GAURI</div>
       
         <div class="nav-right">
-          <i class="fa-solid fa-phone"></i>
-          <i class="fa-solid fa-envelope"></i>
+      
+          <!-- Phone -->
+          <div class="icon-wrap" data-tooltip="Call us">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+      
+          <!-- Email -->
+          <div class="icon-wrap" data-tooltip="Email us">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+      
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/art_by_gauri_/"
+            target="_blank"
+            class="icon-wrap insta"
+            data-tooltip="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+      
         </div>
       </header>
 
-
       <section class="welcome-section">
         <div class="welcome-content">
-            <span class="welcome-tag">Welcome on board</span>
-    
-            <h1>
-                Where <span>emotions</span><br>
-                turn into <span>art</span>
-            </h1>
-    
-            <p>
-                Step into a world of colors, stories, and soulful expressions
-                crafted with intention.
-            </p>
-    
-            <div class="scroll-indicator">
-                <span></span>
-            </div>
+      
+          <h3>
+            Where <span>emotions</span>
+            turn into <span>art</span>
+          </h3>
+      
+          <p>
+            A curated journey of colors, stories, and soulful expressions crafted with intention.
+          </p>
+      
+      
         </div>
-    </section>
+      </section>
 
+
+      <section class="fullscreen-carousel">
+        <div class="pic-ctn">
+          <img src="images/ca1.jpg" alt="" class="pic">
+          <img src="images/ca2.jpg" alt="" class="pic">
+          <img src="images/ca3.jpg" alt="" class="pic">
+          <img src="images/ca4.jpg" alt="" class="pic">
+          <img src="images/ca5.jpg" alt="" class="pic">
+        </div>
+      </section>
 
       <section class="about-me">
         <div class="profile-container reveal">
       
           <!-- Profile Image -->
           <div class="profile-image floating">
-            <img src="https://miro.medium.com/v2/resize:fit:2400/1*0bOVMm8lrTEMk4PYDLog2w.jpeg" 
+            <img src="images/profile_edited.jpg" 
                  alt="Gauri" class="circle">
           </div>
       
           <!-- About Me Text -->
           <div class="profile-text">
-            <h2>Behind the Brand</h2>
+            <h2>About Me</h2>
             <p>
               Hi, I’m <strong>Gauri</strong> — an artist who believes emotions live in colors.
               From paintings to sketches and digital art, my work reflects stories, moods,
@@ -74,7 +100,7 @@
           <!-- Instagram QR -->
           <div class="profile-qr floating">
             <img src="images/Screenshot 2025-12-11 230154.png" alt="Instagram QR" class="qr-code">
-            <p>@ART_BY_GAURI_</p>
+            <p>@ART_BY_GAURI</p>
           </div>
       
         </div>

@@ -1,6 +1,6 @@
 .footer {
-    background: linear-gradient(180deg, #cfc8ff, #7f68b8, #2e164f);
-    padding: 3rem 8px 2rem;
+    background: linear-gradient(180deg, #1d023a, #7960ba, #2f0f8f);
+    padding: 3rem 7px 2rem;
     color: #fff;
   }
   
@@ -28,7 +28,7 @@
     width: 70px;
     height: 70px;
     border-radius: 20px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     display: grid;
     place-items: center;
     margin-bottom: 18px;
@@ -152,6 +152,7 @@
   
   /* MOBILE */
   @media (max-width: 900px) {
+  
     .footer-inner {
       grid-template-columns: 1fr;
     }
@@ -185,4 +186,3 @@
     }
   }
   
-

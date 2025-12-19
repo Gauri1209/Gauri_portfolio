@@ -19,9 +19,9 @@ body {
     /* Modern soft pastel gradient background */
     background: linear-gradient(
         135deg,
-        #f5f7fa 0%,
-        #e4e9f0 50%,
-        #d9e2ef 100%
+        #f0e6fb 0%,
+        #f4f3f7 50%,
+        #f4f5f7 100%
     );
 
     /* Smooth fade-in */
@@ -197,7 +197,8 @@ section {
     font-weight: 700;
     text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
   }
-  
+ 
+
 /* About Me Section */
 /* ==============================
    ABOUT ME – SECTION WRAPPER
@@ -231,7 +232,7 @@ section {
 
     padding: 60px;
 
-    background: rgba(231, 102, 251, 0.25);
+    background: rgba(217, 155, 250, 0.25);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
 
@@ -500,7 +501,7 @@ section {
 
     padding: 60px;
 
-    background: rgba(233, 81, 218, 0.25);
+    background: rgba(227, 166, 252, 0.25);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
 
@@ -654,6 +655,35 @@ section {
 .pic-ctn img:nth-child(4) { animation-delay: 7.2s; }
 .pic-ctn img:nth-child(5) { animation-delay: 9.6s; }
 
+@media screen and (max-width: 700px) {
+
+
+    .pic-ctn {
+        position: relative;
+        width: 100%;
+        padding: 0;
+       /* aspect-ratio: 4 / 4;         🔥 removes vertical gaps */ 
+        overflow: hidden;
+    }
+
+    .pic-ctn > img {
+        position: absolute;
+        inset: 0;                     /* full container */
+        width: 100%;
+        height: 100vh;
+        object-fit: contain;
+
+        opacity: 0;
+        transform: translateY(16px) scale(0.98);
+        animation: fadeGallery 15s infinite ease-in-out;
+
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+}
+
+
+
+
 /* ================= OPTIONAL OVERLAY (PREMIUM FEEL) ================= */
 
 .fullscreen-carousel::before {
@@ -688,7 +718,19 @@ section {
     padding: 2rem 0;
     overflow: hidden;
 }
-
+.vg-carousel-section h2 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #22174b;
+    
+}
+.vg-carousel-section h2:hover {
+    letter-spacing: 2px;
+    text-shadow: 0 0 14px rgba(126, 172, 219, 0.932);
+    transition: letter-spacing 0.3s ease, text-shadow 0.3s ease;
+}
 .vg-carousel-wrapper {
     position: relative; /* for buttons positioning */
 }

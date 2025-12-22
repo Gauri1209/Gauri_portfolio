@@ -761,6 +761,34 @@ section {
     border-radius: 50%;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
+@media screen and (min-width: 700px) {
+
+    .vg-gallery {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 0.1fr 0.8fr 0.1fr 1fr;
+        grid-template-rows: 24vh 10vh 15vh 10vh 24vh;
+        gap: 1rem;
+    }
+
+    .vg-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* background: #fff; */
+        border-radius: 14px;
+        /* padding: 12px; */
+        box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+        transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+    }
+
+    .vg-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 
 .vg-prev { left: 10px; }
 .vg-next { right: 10px; }
@@ -851,21 +879,60 @@ section {
 .vg-image5 { grid-area: 5/3/6/5; }
 .vg-image6 { grid-area: 4/5/6/6; }
 
-@media screen and (min-width: 700px){
-    .vg-gallery {
-        max-width: 1000px;
-        display: grid;
-        grid-template-columns: 1fr 0.1fr 0.8fr 0.1fr 1fr;
-        grid-template-rows: 24vh 10vh 15vh 10vh 24vh;
-        grid-gap: 1rem;
-    }
-}
 
-@media screen and (max-width: 701px){
-    .vg-image {
+
+
+ @media screen and (max-width: 699px) {
+
+    .vg-mobile-nav {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        padding: 0.75rem 1rem 1rem;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+    
+    }
+   
+    .vg-mobile-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .vg-mobile-nav button {
+        min-width: auto;
+        padding: 8px 10px;
+        border-radius: 999px; /* pill shape */
+        border: none;
+        background: #e6e3ef;
+        color: #333;
+        font-size: 0.85rem;
+        font-weight: 500;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        flex-shrink: 0;
+    }
+
+    .vg-mobile-nav button.active {
+        background: #5a3d99;
+        color: #fff;
+        box-shadow: 0 6px 16px rgba(90, 61, 153, 0.25);
+        transform: scale(1.05);
+    }
+
+    .vg-gallery {
+        display: block;
+    }
+
+     .vg-gallery.active-slide .vg-image {
+        display: none;
+    } 
+
+    .vg-gallery.active-slide .vg-image:nth-of-type(-n+3) {
+        display: block;
         margin-bottom: 1rem;
     }
-    .vg-gallery {
-        display: block; /* stack images on mobile */
-    }
-}
+} 
+
+  

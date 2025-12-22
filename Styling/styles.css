@@ -788,6 +788,9 @@ section {
         height: 100%;
         object-fit: cover;
     }
+    .vg-mobile-nav {
+        display: none;
+    }
 }
 
 .vg-prev { left: 10px; }
